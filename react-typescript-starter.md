@@ -526,3 +526,12 @@ export const CPUResourceInput = ({ value, onChange, overrides }: ICPUResourceInp
 }
 
 ```
+
+```ts
+type UserMenuProps = Omit<
+  MenuProps,
+  "id" | "role" | "open" | "anchorOrigin" | "transformOrigin"
+> & {
+  onChangeTheme: () => void;
+};
+```
